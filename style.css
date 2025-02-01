@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    font-family: Verdana;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url("Images/Cachoeira.jpeg");
+    position: relative;
+}
+
+@media (min-width: 480px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height:180px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        position:sticky;
+        top: 0px;
+        z-index: 1;
+    }
+        #logo{
+            margin: 20px;
+        }
+        #ul_nav{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            font-size: 12px;
+            padding: 20px;
+        }
+        #ul_nav li{
+            background-color: rgb(38, 116, 58);
+            padding: 5px 20px;
+            margin: 5px;
+        }
+        #ul_nav li a{
+            color: white;
+            text-decoration: none;
+        }
+        #ul_nav li a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    main{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+        article{
+            border-bottom: solid 1px;
+            padding: 20px;
+            position: relative;
+        }
+            article h3{
+                margin-bottom: 10px;
+            }
+            article p{
+                text-align: justify;
+                text-indent: 30px;
+                margin: 10px;
+            }
+            #quem_nos_somos{
+                border-top: solid 1px;
+            }
+            #ul_locais{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }
+            #div_planos{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 40px 0px 20px 0px;
+            }
+            #div_planos div{
+                background-color: rgb(114, 106, 106);
+                padding: 10px;
+            }
+            #div_planos div:hover{
+                scale: 2;
+            }
+            figure{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content:center;
+            }
+    footer{
+        width: 100%;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position:sticky;
+        bottom:0px;
+        padding: 20px;
+    }
+}
