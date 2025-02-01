@@ -12,7 +12,7 @@ body{
     position: relative;
 }
 
-@media (min-width: 480px){
+@media (max-width: 480px){
     header{
         display: flex;
         flex-direction: row;
