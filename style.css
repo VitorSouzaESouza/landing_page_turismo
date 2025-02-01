@@ -55,7 +55,6 @@ body{
         article{
             border-bottom: solid 1px;
             padding: 10px;
-            position: relative;
         }
             article h3{
                 margin-bottom: 10px;
@@ -98,14 +97,14 @@ body{
             #div_planos div:hover{
                 scale: 1.5;
             }
-            #h3_contatos figure{
+            #div_contatos figure{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content:center;
                 font-size: 12px;
             }
-            #h3_contatos figure img{
+            #div_contatos figure img{
                 margin-right: 10px;
             }
     footer{
@@ -115,5 +114,38 @@ body{
         position:sticky;
         bottom:0px;
         padding:20px;
+    }
+    @media (min-width:1280px){
+        #ul_nav{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            font-size: 12px;
+            padding: 20px;
+        }
+        #ul_locais{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            list-style: none;
+            padding: 0px;
+        }
+        #ul_locais li{
+            width:30vw;
+            height:250px;
+            background-color: rgb(145, 115, 51);
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        #ul_locais figure{
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+        }
+        #div_planos{
+            justify-content: center;
+            gap: 100px;
+        }
     }
 }
